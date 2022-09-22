@@ -1,3 +1,4 @@
 bazel run onos-local -- clean debug
 onos localhost
 sudo mn --custom=project1_part2_310581027.py --topo=topo_part2_310581027 --controller=remote,ip=127.0.0.1,port=6653 --switch=ovs,protocols=OpenFlow14
+curl -u onos:rocks -X POST -H 'Content-Type: application/json' -d @flow1.json 'http://localhost:8181/onos/v1/flows/of:0000000000000001'
