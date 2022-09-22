@@ -1,2 +1,3 @@
 bazel run onos-local -- clean debug
+onos localhost
 sudo mn --custom=project1_part2_310581027.py --topo=topo_part2_310581027 --controller=remote,ip=127.0.0.1,port=6653 --switch=ovs,protocols=OpenFlow14
