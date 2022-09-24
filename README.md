@@ -4,9 +4,11 @@ For NYCU_SDN_NFV Course
 ```
 bazel run onos-local -- clean debug
 onos localhost
-sudo mn --custom=project1_part2_310581027.py --topo=topo_part2_310581027 --controller=remote,ip=127.0.0.1,port=6653 --switch=ovs,protocols=OpenFlow14
 0x800 (0x0800) IPV4
 0x806 (0x0806) ARP
+```
+```
+sudo mn --custom=project1_part2_310581027.py --topo=topo_part2_310581027 --controller=remote,ip=127.0.0.1,port=6653 --switch=ovs,protocols=OpenFlow14
 ```
 ```
 curl -i -u onos:rocks -X POST -H 'Content-Type: application/json' -d @flow1.json 'http://localhost:8181/onos/v1/flows/of:0000000000000001'
