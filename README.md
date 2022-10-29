@@ -24,4 +24,5 @@ mvn clean install -DskipTests
 onos-app localhost deactivate <onos.app.name> # nctu.winlab.
 onos-app localhost uninstall <onos.app.name>
 onos-app localhost install! target/<artifactId>-<version>.oar # -1.0-SNAPSHOT.oar
+onos netcfg localhost config.json
 ```
