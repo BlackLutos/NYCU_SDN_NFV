@@ -19,3 +19,9 @@ curl -i -u onos:rocks -X POST -H 'Content-Type: application/json' -d @flow1.json
 ```
 http://192.168.152.130:8181/onos/v1/docs
 ```
+```
+mvn clean install -DskipTests
+onos-app localhost deactivate <onos.app.name> # nctu.winlab.
+onos-app localhost uninstall <onos.app.name>
+onos-app localhost install! target/<artifactId>-<version>.oar # -1.0-SNAPSHOT.oar
+```
