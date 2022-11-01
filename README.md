@@ -27,3 +27,7 @@ onos-app localhost install! target/<artifactId>-<version>.oar # -1.0-SNAPSHOT.oa
 onos-netcfg localhost config.json
 onos-netcfg localhost unicastdhcp.json
 ```
+```
+h1 dhclient -v h1-eth0
+h1 dhclient -r h1-eth0
+```
